@@ -20,6 +20,9 @@ public class AssignmentOperator {
 
         a %= 2;
         System.out.println(a);
+        System.out.println(b);
+
+        System.out.println(a<=b);
         
     }
 }

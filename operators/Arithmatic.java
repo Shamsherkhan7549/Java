@@ -50,7 +50,6 @@ class AritmaticOprtators {
         int n = --l; //first changed new value and use new value
         System.out.println("Pre decrement: " + n);
 
-
     }
     
 };
