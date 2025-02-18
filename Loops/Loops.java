@@ -1,5 +1,7 @@
 package Loops;
 
+import MyCompany.MyPackage; //custom package
+
 public class Loops {
     public static void main(String[] args) {
         int n= 5;
@@ -24,5 +26,8 @@ public class Loops {
             };
             System.out.println();
         }
+
+        MyPackage myPackage = new MyPackage();
+        myPackage.greet("Shamsher");
     }
 }

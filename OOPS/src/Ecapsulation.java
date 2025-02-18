@@ -3,8 +3,13 @@ public class Ecapsulation {
         System.out.println("Encapsulation");
 
         User user = new User();
+        user.username = "Shamsher12";
         user.setPassword("shams123");
         System.out.println(user.getPassword());
+
+
+
+
     }
 }
 
@@ -24,3 +29,5 @@ class User {
         return this.password;
     }
 }
+
+

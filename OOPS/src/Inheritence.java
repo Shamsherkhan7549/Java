@@ -112,5 +112,7 @@ class Child implements Parent1, Parent2{
 }
 
 // 4. Hierarchical Inheritance – Multiple child classes inherit from a single parent class.
+    // :- Base class ---> Derived class, Base class ---> Derived class
 
-// 5. Hybrid Inheritance – A mix of two or more types of inheritance.7
+// 5. Hybrid Inheritance – A mix of two or more types of inheritance.
+     // :- Its  is combination of tow or more inheritance
