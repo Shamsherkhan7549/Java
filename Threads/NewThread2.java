@@ -1,7 +1,6 @@
 package Threads;
 
-// Do it on runnable
-
+//using runnable
 class Example2  implements Runnable{
 
     public  void greet(){
@@ -10,7 +9,7 @@ class Example2  implements Runnable{
 
     public  void run(){
         try{
-            greet();
+
             System.out.println("Thread-2 " + Thread.currentThread().getId() + " is running.");
         } catch (Exception e) {
             System.out.println("Error Caught");
@@ -18,6 +17,7 @@ class Example2  implements Runnable{
     }
 }
 
+//using extends
 class  Example extends Thread{
 
     public void run(){
@@ -43,9 +43,9 @@ public class NewThread2 {
         int m = 4;
         for(int i = 0; i < m; i++){
            Example2 example = new Example2();
+           example.greet();
            Thread thread = new Thread(example);
              thread.start();
-
         }
     }
 }
