@@ -15,7 +15,7 @@ class MyRunnalble implements Runnable{
 public class Threads {
     public  static void main(String [] args){
         System.out.println("This is Threads");
-
+        System.out.println(Thread.currentThread());
         MyThread thread = new MyThread();
         thread.start(); //Thread start
 
