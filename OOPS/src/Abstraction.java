@@ -13,6 +13,12 @@ public class Abstraction {
 
       // Mammal mammal = new Mammal(); // We cannot create object of an abstract class
 
+        Queens queen = new Queens();
+        queen.moves();
+
+        Bear bear = new Bear();
+        bear.eatMeat();
+        bear.eatPlant();
     }
 
 }
@@ -57,6 +63,50 @@ class Chicken extends Mammal{
 }
 
 // Interfaces:- Interface is a blueprint of a class
+// -> All methods are public, abstract & without implementation
+// -> Used to achieve total abstraction
+// -> Variables in the interface are final, public and static
 
+interface ChessPlayer{
+    void moves();
+}
 
+class Queens implements ChessPlayer{
+    public void moves(){
+        System.out.println("up, down, left, right, diagonal - (in all direction)");
+    }
+
+}
+
+class Rook implements ChessPlayer{
+    public void moves(){
+        System.out.println("up, down, left, right");
+    }
+}
+
+class King implements ChessPlayer{
+    public void moves(){
+        System.out.println("up, down, left, right, diagonal - (one step)");
+    }
+}
+
+//Multiple inheritance
+
+interface  Carnivore{
+    void eatMeat();
+}
+
+interface  Herbivore{
+    void eatPlant();
+}
+
+class Bear implements Carnivore, Herbivore{
+    public void eatMeat(){
+        System.out.println("Bear eats fish");
+    }
+
+    public void eatPlant(){
+        System.out.println("Beer eats plants");
+    }
+}
 
