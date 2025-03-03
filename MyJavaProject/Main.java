@@ -10,25 +10,6 @@ public class Main {
          Class.forName("MyJavaProject.App");
         System.out.println("Welcome...");
 
-        // Database credentials
-//        String url = "jdbc:mysql://localhost:3306/your_database_name"; // Change database_name
-//        String user = "your_username"; // Change username
-//        String password = "your_password"; // Change password
-//
-//        try {
-//            // Load MySQL JDBC Driver
-//            Class.forName("com.mysql.cj.jdbc.Driver");
-//
-//            // Establish Connection
-//            Connection conn = DriverManager.getConnection(url, user, password);
-//            System.out.println("Connected to MySQL successfully!");
-//
-//            // Close Connection
-//            conn.close();
-//        } catch (Exception e) {
-//            System.out.println(e);;
-//        }
-
     }
 }
 
@@ -72,8 +53,8 @@ public class Main {
 // if our  database is Oracle :-
 // DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","oracle")
 
- // DriverManager class must have the reference of (object og) respective Driver class.
-//Every Driver class, on loading , creates an object of itself and gives thath obhect to the DriverManager class.
+ // DriverManager class must have the reference of (object) respective Driver class.
+//Every Driver class, on loading , creates an object of itself and gives that object to the DriverManager class.
 
 //Remember that , all classes that our program is using directly will ber loaded by JVM, but our program is not using Drive class directly , so, it will not be loaded automatically.
 
