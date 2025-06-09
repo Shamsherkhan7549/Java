@@ -15,6 +15,9 @@ public class ClassObject {
 
         System.out.println(pen.penTip(3));
         System.out.println(pen.penColor("yellow"));
+
+        // float f = 3.23; // compile time error
+       
     }
 };
 
