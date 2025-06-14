@@ -2,14 +2,21 @@ public class Polymorphism {
     public static void main(String[] args){
         System.out.println("Its Polymorphism");
 
-        //Polymorphism means "many forms." In object-oriented programming (OOP), it allows us to use the same method or function in different ways based on the type of object we are working with. This can happen because of inheritance (when one class is based on another) or through interfaces (a contract that classes agree to follow).
+        /*
+            Polymorphism means "many forms." In object-oriented programming (OOP),
+            it allows us to use the same method or function in different ways based on
+            the type of object we are working with. This can happen because of inheritance 
+            (when one class is based on another) or through interfaces (a contract that 
+            classes agree to follow).
+        */
+
         //Types of Polymorphism in Java:
-        //1. Compile-time Polymorphism (also known as Method Overloading)
-        //2. Run-time Polymorphism (also known as Method Overriding)
+        //1. Compile-time Polymorphism (also known as Method Overloading) or static or early-binding
+        //2. Run-time Polymorphism (also known as Method Overriding) or dyanamic or late-binding
 
         //1. Compile-time Polymorphism (also known as Method Overloading)
             Sum sum1 = new Sum();
-            int add1= sum1.sum(2,3);  //  this time (compile time) it chosen which function should call
+            int add1= sum1.sum(2,3);  //this time (compile time) it chosen which function should call
             int add2 = sum1.sum(1,2,3);
         System.out.println("add1 = " + add1);
         System.out.println("add2 = " + add2);

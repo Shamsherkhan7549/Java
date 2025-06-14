@@ -1,7 +1,7 @@
 public class ClassObject {
 
         // class :- group of the the real world entities
-        // Class :– A blueprint for creating objects (e.g., Car class). It defined attributes or varables or properties and method or behaviours or funtion
+        // Class :– A blueprint for creating objects (e.g., Car class). It defined attributes or variables or properties and method or behaviours or funtion
 
         // objects :- entities in the real world
         //Object :– An instance of a class (e.g., myCar is an object of the Car class).It represents a real-world entity with properties and behaviors.

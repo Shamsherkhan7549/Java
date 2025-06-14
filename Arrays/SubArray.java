@@ -4,7 +4,10 @@ public class SubArray {
 
         for(int i = 0; i < number.length; i++){
             for(int j = i+1; j < number.length; j++){
-                 System.out.print( " (" + number[i] + ", " + number[j] + " )");
+                for(int k = i; k <= j; k++){
+                    System.out.print(number[k] + " ");
+                }
+                System.out.println();
             }
             System.out.println();
         }
