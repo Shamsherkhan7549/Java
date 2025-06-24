@@ -3,5 +3,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="Arrays"/>
 	<classpathentry kind="src" path="AF"/>
+	<classpathentry kind="src" path="Collection Framework/src"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

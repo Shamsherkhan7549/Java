@@ -16,7 +16,7 @@ class Student{
 		this.phone = phone;
 		this.fee = fee;
 	}
-	@Override
+
 	public String toString() {
 		return "Student [roll_no=" + roll_no + ", name=" + name + ", phone=" + phone + ", fee=" + fee + "]";
 	}	
@@ -47,7 +47,7 @@ public class StudentInfoArrayList {
 		 
 		 student.add(new Student(roll_no, name , phone, fee));
 		 
-		 System.out.println("Do you want to break y/n: ");
+		 System.out.println("Do you want to exit y/n: ");
 		 char permission  = sc.next().charAt(0);
 		 if(permission == 'y') {
 			 break ;
@@ -57,6 +57,8 @@ public class StudentInfoArrayList {
 	
 	System.out.println("You are exit");
 	
+	
+	
 //	 
 //	 student.add(new Student(1, "sam", 919191910, 300));
 //	 student.add(new Student(2, "sam2", 919191911, 400));
@@ -64,10 +66,8 @@ public class StudentInfoArrayList {
 //	 student.add(new Student(4, "sam4", 919191913, 600));
 //	 student.add(new Student(5, "sam5", 919191914, 700));
 	 
-//	 for(Student s :student) {
-//		 System.out.print(s);
-//	 }
-//	 
+	 System.out.println(student);
+	 
 	 
  }
 }
