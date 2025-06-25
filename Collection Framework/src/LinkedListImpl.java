@@ -38,6 +38,9 @@ class linkedlist{
     }
 
     void addAtIndex(int index, int value){
+
+        int size = size();
+
         Node newnNode = new Node(value);
 
         if(index == 0){
@@ -46,11 +49,14 @@ class linkedlist{
                 head = newnNode;
 
                 return;
+        }else if(index < 0 || index > size){
+            System.out.println("Invalid index");
+            return;
         }
 
         int count = 0;
         Node temp = head;
-        int size = size();
+        
         while (temp != null) {
             if(count+1 == index){
                 Node temp2 = temp.next;
@@ -105,6 +111,24 @@ class linkedlist{
         return false;
     }
 
+    int get(int index){
+        int size = size();
+        if(index < 0 || index >= size){
+            System.out.println("Invalid index");
+            return -1;
+        }
+
+        Node temp = head;
+        for(int i = 0; i < size; i++){
+            if(i == index){
+                return temp.data;
+            }
+
+            temp = temp.next;
+        }
+
+        return -1;
+    }
 
     int size(){
         Node temp = head;
@@ -146,15 +170,18 @@ public class LinkedListImpl {
         ll.addAtIndex(5, 8);
         ll.addAtIndex(6, 9);
 
-        System.out.println("tail : "+ ll.tail.data);
+        // System.out.println("tail : "+ ll.tail.data);
 
         ll.print();
-        System.out.println("________ after remove___________ ");
+        // System.out.println("________ after remove___________ ");
 
-        System.out.println(ll.remove(9));;
+        // System.out.println(ll.remove(9));;
         System.out.println("tail : "+ ll.tail.data);
+        System.out.println("head : "+ ll.head.data);
 
-        ll.print();
+       System.out.println("element is " + ll.get(2));
+
+
 
         
 
