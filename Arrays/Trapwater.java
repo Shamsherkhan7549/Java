@@ -18,7 +18,6 @@ public class Trapwater {
             trapedWater += (Math.min(leftMax[i], rightMax[i]) - heights[i])*width;
         }
 
-
         return trapedWater;
     }
     public static void main(String[] args) {
