@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.NoSuchElementException;
 
 class Stack2{
 
@@ -11,14 +12,30 @@ class Stack2{
     }
 
     void print(){
-        System.out.println(al);
+       if(isEmpty()){ 
+            System.out.println("Stack is empty!");
+            return;
+        };
+        for(int i = 0; i < al.size(); i++){
+            System.out.print(al.get(i) + " ");
+        };
     }
 
     int peek(){
+        
+        if(isEmpty()){
+            System.out.println("Stack is empty");
+            throw new NoSuchElementException("Stack is empty");
+        }
+
        return al.get(index-1);
     }
 
     int pop(){
+        if(isEmpty()){
+            System.out.println("Stack is empty");
+            throw new NoSuchElementException("Stack is empty");
+        }
         int x = al.remove(index-1);
         index--;
         return x;
@@ -30,6 +47,10 @@ class Stack2{
     }
 
     boolean isFull(){
+        if(isEmpty()){
+            System.out.println("Stack is empty");
+            throw new NoSuchElementException("Stack is empty");
+        }
         if(index == size()) return true;
         else return false;
     }
