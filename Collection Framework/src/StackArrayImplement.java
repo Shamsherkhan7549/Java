@@ -8,7 +8,6 @@ class Stack {
     void push(int element){ 
         if(isFull()){
             System.out.println("Stack is full");
-            
             return;
         }
         arr[index] = element;
