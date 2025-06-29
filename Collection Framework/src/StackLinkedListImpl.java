@@ -7,7 +7,7 @@ class Stack <T>{
     LinkedList<T> ll = new LinkedList<>();
 
     void push(T element){
-        ll.addLast(element);
+        ll.addFirst(element);
     }
 
     T peek(){
@@ -16,7 +16,7 @@ class Stack <T>{
             throw new NoSuchElementException("Stack is empty!");
         }
 
-        return ll.getLast();
+        return ll.getFirst();
     }
 
     T pop(){
@@ -25,7 +25,7 @@ class Stack <T>{
             throw new NoSuchElementException("Stack is empty!");
         }
 
-        return ll.removeLast();
+        return ll.removeFirst();
     }
 
     void print(){
