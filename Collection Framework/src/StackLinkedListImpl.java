@@ -34,8 +34,10 @@ class Stack <T>{
             throw new NoSuchElementException("Stack is empty!");
         }
 
-        for(int i = 0; i < ll.size(); i++){
-            System.out.print(ll.get(i) + " ");
+        LinkedList<T> ll2 = ll.reversed();
+
+        for(int i = 0; i < ll2.size(); i++){
+            System.out.print(ll2.get(i) + " ");
         }
         System.out.println();
     }
@@ -72,6 +74,12 @@ public class StackLinkedListImpl {
         stack2.push("rehan");
         stack2.push("samar");
         stack2.print();
+
+         System.out.println("Popped element : " + stack2.pop());
+        System.out.println("Peeked element : " + stack2.peek());
+        stack2.print();
+
+
         System.out.println("size stack2 : " + stack2.size());
 
     }
