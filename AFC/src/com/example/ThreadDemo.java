@@ -45,5 +45,7 @@ public static void main(String str[]) {
 	
 	MyThread2 t2  = new MyThread2();
 	t2.start();
+
+	
 }
 }

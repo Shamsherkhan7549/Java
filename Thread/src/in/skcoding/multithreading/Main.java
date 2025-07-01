@@ -22,7 +22,9 @@ public class Main {
         System.out.println("\n third task completed");
 
         long endTime = System.currentTimeMillis();
-        System.out.printf("Total time take: %d" , endTime);
+        System.out.printf("Total time take: %d " , endTime-startTime);
+        
+        System.out.println("Current Thread = " + Thread.currentThread());
 
     }
 }

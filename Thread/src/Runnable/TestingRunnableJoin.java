@@ -1,6 +1,6 @@
 package Runnable;
 
-public class TestingRunnable{
+public class TestingRunnableJoin{
     public  static void main(String [] args){
         PrintTask printTask = new PrintTask('$');
         PrintTask printTask2 = new PrintTask('*');
@@ -11,11 +11,17 @@ public class TestingRunnable{
         Thread thread3 = new Thread(printTask3);
 
         thread.start();
-        thread.setPriority(Thread.MIN_PRIORITY);
+
         thread2.start();
-        thread2.setPriority(Thread.NORM_PRIORITY);
+        
+        try {
+        	thread2.join();
+        }catch(InterruptedException ex) {
+        	System.out.println(ex);
+        }
+
         thread3.start();
-        thread3.setPriority(Thread.MAX_PRIORITY);
+
     }
 
 }
