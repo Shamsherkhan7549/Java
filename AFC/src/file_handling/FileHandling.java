@@ -10,7 +10,10 @@ import java.util.Scanner;
 public class FileHandling {
  public static void main(String Str[]) {
 	 Scanner sc = new Scanner(System.in);
-	 
+	
+		
+	
+		
 	 //Create file
 	 File file = new File("d:\\student.txt");
 	 
@@ -29,19 +32,25 @@ public class FileHandling {
 	 }
 	 
 	 try {
-		 FileWriter fw = new FileWriter(file);
+		 FileWriter fw = new FileWriter(file,true);
 		 BufferedWriter bw = new BufferedWriter(fw);
 		 PrintWriter pw = new PrintWriter(bw);
-		 
 		 System.out.print("Enter Id : ");
-		 		int id = sc.nextInt();
-		 		
-		 System.out.print("Enter Name : ");
-		 		String name = sc.next();
-		 		
+			int id = sc.nextInt();
 		 pw.println("Id : " + id);
-		 pw.println("Name : " + name);
+		
+		 System.out.print("Enter Name : ");
+			String name = sc.next();
+			
+			
+		pw.println("Name : " + name);
 		 
+		 pw.close();
+		 bw.close();
+		 fw.close();
+		 sc.close();
+		 
+		 System.out.println("Task completed");
 	 }catch(IOException ex) {
 		 System.out.println("Errro " + ex);
 	 }
