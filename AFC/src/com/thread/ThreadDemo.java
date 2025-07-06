@@ -1,4 +1,4 @@
-package com.example;
+package com.thread;
 
 class MyThread extends Thread{
 	public void run() {
@@ -6,7 +6,7 @@ class MyThread extends Thread{
 			if(i%2 == 0) {
 				try {
 					
-					Thread.sleep(500);
+					MyThread.sleep(500);
 					
 				}catch(Exception err) {
 					System.out.println(err);
@@ -41,9 +41,10 @@ public static void main(String str[]) {
 	System.out.println("thred");
 	
 	MyThread t  = new MyThread();
-	t.start();
 	
 	MyThread2 t2  = new MyThread2();
+	
+	t.start();
 	t2.start();
 
 	

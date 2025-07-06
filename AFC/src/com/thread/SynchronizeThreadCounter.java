@@ -1,4 +1,4 @@
-package com.example;
+package com.thread;
 
 public class SynchronizeThreadCounter {
 	 static int counter = 0;
@@ -39,6 +39,5 @@ public class SynchronizeThreadCounter {
 	        // Print the final counter value
 	        System.out.println("Final Counter Value: " + counter);
 }
-
 
 }

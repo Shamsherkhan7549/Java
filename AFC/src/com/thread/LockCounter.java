@@ -1,4 +1,4 @@
-package com.example;
+package com.thread;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -72,5 +72,6 @@ public class LockCounter {
 
         // Display final counter value
         System.out.println("Final Counter with Lock: " + counter);
+        
 }
 }
