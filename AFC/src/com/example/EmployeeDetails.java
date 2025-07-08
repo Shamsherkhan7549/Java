@@ -40,7 +40,7 @@ public static void main(String str[]) {
 	
 	while(iterator.hasNext()) {
 		Employee  emp = (Employee)iterator.next();
-		System.out.println("id: " + emp.emp_id + "name: " + emp.name + "salary: " + emp.salary);
+		System.out.println("id: " + emp.emp_id + " name: " + emp.name + " salary: " + emp.salary);
 	}
 
 	
