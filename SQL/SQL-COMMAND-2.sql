@@ -17,6 +17,7 @@ INSERT INTO student (name, email,course_id) VALUES
 ('khan', "khan@gmail.com",3),
 ('ram', "ram@gmail.com",1),
 ('rahul', "ahul@gmail.com",2);
+
 -- use to fetch all data from student
 SELECT * FROM  student;
 RENAME TABLE student TO student_info;
