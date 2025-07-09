@@ -123,6 +123,5 @@ public class StackAssingment {
         // displayStackRec(nums);
         removeAt(nums);
         System.out.println(nums);
-
     }
 }
