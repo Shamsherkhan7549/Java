@@ -27,7 +27,8 @@ INSERT INTO student(name, email, course_id) VALUE
 
 -- FETCH STUDENT 
 SELECT * FROM STUDENT;
-
+-- TO UPDATE TABLE sutdent
+UPDATE student SET course_id = 1 WHERE id = 4;
 
 -- CREATE COURSE
 CREATE TABLE course
@@ -48,11 +49,13 @@ INSERT INTO course(course, fee) VALUE
 -- FETCH COURSE
 SELECT * FROM course;
 
-SELECT * FROM student s INNER JOIN course c ON s.course_id = c.course_id;
+
+
+			
 SELECT s.name , s.email, c.course, c.fee FROM student s INNER JOIN COURSE c ON s.course_id = c.course_id;
 
 -- RIGHT JOIN
 SELECT s.name, s.email, c.course, c.fee FROM student s RIGHT JOIN course c ON s.course_id = c.course_id;
 
 -- LEFT JOIN
-SELECT s.name, s.email, c.course, c.fee FROM course c RIGHT JOIN student s ON c.course_id = s.course_id;
+SELECT s.name, s.email, c.course, c.fee FROM course c LEFT JOIN student s ON s.course_id = c.course_id;
