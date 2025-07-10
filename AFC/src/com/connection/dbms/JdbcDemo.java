@@ -2,7 +2,9 @@ package com.connection.dbms;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class JdbcDemo {
 	public static void main(String str[]) {
@@ -19,6 +21,14 @@ public class JdbcDemo {
 			}else {
 				System.out.println("DB not connected");
 			}
+			
+			Statement statement = connection.createStatement();
+			ResultSet rs = statement.executeQuery("SELECT * FROM STUDENT");
+			
+			while(rs.next()) {
+				System.out.println(rs.getInt(1) + " " + rs.getString(2) + " " + rs.getString(3) );
+			}
+			
 			
 		}catch(SQLException ex){
 			System.out.println("DB not connected");
