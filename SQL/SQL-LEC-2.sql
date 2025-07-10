@@ -14,7 +14,7 @@ INSERT INTO student(name, age, city) VALUES
 ("Rah", 21, "Kolkata"),
 ("Sara", 22, "Mumbai");
 
--- WHERE clause
+-- WHERE clause use to filter student based on a condition
 SELECT * FROM student 
 WHERE age = 22;
 
@@ -28,13 +28,13 @@ SELECT * FROM student
 WHERE age = 21 OR city = 'Mumbai';
 
 SELECT * FROM student
-WHERE NOT city = 'Mumbai';
+WHERE NOT city = 'Mumbai'; -- Select student whose city is not mumbai
 
 SELECT * FROM student
 WHERE age BETWEEN 20 AND 21;
 
 SELECT * FROM student
-WHERE city IN("Kolkata", "Mumbai");
+WHERE city IN("Kolkata", "Mumbai"); -- select student wich city is mentioned
 
 SELECT * FROM student
 WHERE name LIKE('M%'); -- select name starts with m
