@@ -1,0 +1,78 @@
+
+**Java Developer Interview Questions** 
+**beginner to intermediate-level** roles,
+ **Core Java, OOP, Collections, JDBC, Multithreading, 
+---
+
+
+## 🔷 **Core Java – Basics**
+
+1. **What is the difference between JDK, JRE, and JVM?**
+2. **What are the features of Java?**
+3. **What is the difference between `==` and `.equals()` in Java?**
+4. **What is a constructor? What are the types of constructors in Java?**
+5. **What are static methods and variables?**
+
+---
+
+## 🔷 **OOPs Concepts**
+
+6. **Explain the four pillars of OOP (Abstraction, Encapsulation, Inheritance, Polymorphism).**
+7. **What is method overloading and method overriding?**
+8. **Can we override a static method?**
+9. **What is the difference between abstract class and interface?**
+10. **What is the use of `super` and `this` keyword?**
+
+---
+
+## 🔷 **Exception Handling**
+
+11. **What is the difference between checked and unchecked exceptions?**
+12. **What is the use of `try`, `catch`, `finally`, `throw`, and `throws`?**
+13. **What is the difference between `final`, `finally`, and `finalize()`?**
+
+---
+
+## 🔷 **Java Collections Framework**
+
+14. **What is the difference between List, Set, and Map?**
+15. **How does HashSet work internally?**
+16. **What is the difference between ArrayList and LinkedList?**
+17. **What is the difference between HashMap and Hashtable?**
+18. **What are the different types of Set implementations in Java?**
+19. **How does TreeSet maintain the order?**
+20. **What is the difference between Comparable and Comparator?**
+
+---
+
+## 🔷 **Multithreading and Concurrency**
+
+21. **What is a thread in Java?**
+22. **Difference between `Thread` class and `Runnable` interface?**
+23. **What is synchronization and why is it important?**
+24. **What is the difference between `wait()` and `sleep()`?**
+25. **What is deadlock? How can you prevent it?**
+
+---
+
+## 🔷 **JDBC (Java Database Connectivity)**
+
+26. **What are the steps to connect to a database in JDBC?**
+27. **What is the difference between `executeQuery()`, `executeUpdate()`, and `execute()`?**
+28. **What are the transaction isolation levels in JDBC?**
+29. **How do you handle SQL exceptions?**
+30. **What is a PreparedStatement? Why use it over Statement?**
+
+---
+
+## 🔷 **Advanced Topics (Optional in Entry-Level Interviews)**
+
+31. **What is garbage collection in Java?**
+32. **What is the difference between heap and stack memory?**
+33. **What is the Java memory model?**
+34. **What is the use of the `volatile` keyword?**
+35. **How does Java achieve platform independence?**
+
+---
+
+Would you like sample answers for any of these? Or questions tailored to **Spring Boot**, **Hibernate**, or **Web development with Java**?
