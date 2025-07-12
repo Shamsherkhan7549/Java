@@ -127,6 +127,8 @@ public class ArrayAssigments {
         // 6.
         int []newArrK = kThsmallestAndKThLargest(arr, 2);
         printArray(newArrK);
+
+        System.out.println("completed lect");
        
     }
 }
