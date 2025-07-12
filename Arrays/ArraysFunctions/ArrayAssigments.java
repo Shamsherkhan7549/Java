@@ -79,6 +79,11 @@ public class ArrayAssigments {
         return new int[]{arr[0], arr[arr.length-1]};
     }
 
+    // 6. Return an array which first value will be Kth smallest and last value will be Kth largest value of given array;
+    public static int[] kThsmallestAndKThLargest(int arr[], int k){
+        Arrays.sort(arr);
+        return new int[]{arr[k-1], arr[arr.length-k]};
+    }
 
     // print array
      public static void printArray(int []arr){
@@ -89,12 +94,15 @@ public class ArrayAssigments {
     }
 
     public static void main(String[] args) {
-        int[] arr = new int[5];
+        int[] arr = new int[8];
         arr[0] = 4;
         arr[1] = 5;
         arr[2] = 6;
-        arr[3] = 6;
-        arr[4] = 4;
+        arr[3] = 7;
+        arr[4] = 9;
+        arr[5] = 3;
+        arr[6] = 8;
+        arr[7] = 1;
         printArray(arr);
         System.out.println("length of arr" + arr.length);
         //1.
@@ -115,6 +123,10 @@ public class ArrayAssigments {
         // int []newArr = smallestAndLargest(arr);
         int []newArr = smallestAndLargest2(arr);
         printArray(newArr);
+
+        // 6.
+        int []newArrK = kThsmallestAndKThLargest(arr, 2);
+        printArray(newArrK);
        
     }
 }
