@@ -1,6 +1,5 @@
-
 class Queue<T>{
-    int length = 5;
+    int length = 50;
     int size = 0;
     int front = 0;
     int rear = 0;
