@@ -9,11 +9,14 @@ CREATE TABLE student
 (
   id INT PRIMARY KEY AUTO_INCREMENT,
   name VARCHAR(20) NOT NULL,
-  email VARCHAR(50) UNIQUE
+  email VARCHAR(50) UNIQUE,
+  password VARCHAR(50)
 );
 
 -- use to fetch all data from student
 SELECT * FROM  student;
+DELETE  FROM student WHERE id = 3;
+DROP TABLE student;
 
 -- use to update single data from table
 UPDATE student SET email= 'khan123@gmail.com' WHERE id = 2;
