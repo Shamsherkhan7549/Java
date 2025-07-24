@@ -1,12 +1,13 @@
 package connection.dao;
 
 import java.sql.ResultSet;
+
 import java.sql.SQLException;
 import java.util.Scanner;
 
 public class Main {
  public static void main(String str[]) {
-	 
+	 try {
 	 CrudOperation co = new CrudOperation();
 	 
 	 System.out.println("Enter 1 to create user");
@@ -14,6 +15,8 @@ public class Main {
 	 System.out.println("Enter 3 to list all user");
 	 System.out.println("Enter 4 to update user");
 	 System.out.println("Enter 5 to delete user");
+	 System.out.println("Enter 6 to see table Info");
+	 System.out.println("Enter 7 to create table");
 	 
 	 Scanner sc = new Scanner(System.in);
 	 
@@ -39,36 +42,26 @@ public class Main {
 	 case 2: 
 		 System.out.println("Enter email to view user : ");
 		 String email2 = sc.next();
-		 try {
+		 
 			 ResultSet rs = co.viewUser(email2);
 			 System.out.println("rs : " + rs);
 			 while(rs.next()) {
 				 System.out.println("id : " + rs.getInt(1) + " name : " + rs.getString(2) + " email : " + rs.getString(3) + " password : " + rs.getString(4));
 			 }
 			 
-			 
-		 }
-		 catch(SQLException ex) {
-			 System.out.println(ex);
-		 }
 		 break;
 		 
 	 case 3: 
 		 System.out.println("Enter email to view user : ");
-		 try {
-			 ResultSet rs = co.viewAllUser();
 			 // available user :- rs : com.mysql.cj.jdbc.result.ResultSetImpl@3eb738bb
 			// id : 1 name : raghu email : raghu@gmail.com password : raghu123
 			 
 			 // user not found: com.mysql.cj.jdbc.result.ResultSetImpl@3eb738bb
-			 
-			 while(rs.next()) {
-				 System.out.println("id : " + rs.getInt(1) + "\t" + " name : " + rs.getString(2) + "\t" + " email : " + rs.getString(3) + "\t" + " password : " + rs.getString(4));
+		 	ResultSet rs1 = co.viewAllUser();
+			 while(rs1.next()) {
+				 System.out.println("id : " + rs1.getInt(1) + "\t" + " name : " + rs1.getString(2) + "\t" + " email : " + rs1.getString(3) + "\t" + " password : " + rs1.getString(4));
 			 }
-		 }
-		 catch(SQLException ex) {
-			 System.out.println(ex);
-		 }
+		
 		 break;
 		 
 	 case 4: 
@@ -101,6 +94,24 @@ public class Main {
 			 System.out.println("Id or password is wrong");
 		 }
 		 break;
+		 
+		 case 6:
+			 co.tableInfo();
+			 break;
+			 
+		 case 7:
+			 co.createTable(); 
+			 break;
+			 
+		 }
+	 
+	 
+
+	 }
+	 
+	
+	 catch(SQLException ex) {
+		 System.out.println(ex);
 	 }
  }
 }

@@ -75,3 +75,9 @@ HAVING count(*)>1;
 SELECT marks FROM students
 ORDER BY marks DESC
 LIMIT 1 OFFSET 1;
+
+SELECT max(marks) AS max_marks
+FROM students
+WHERE marks < (
+SELECT max(marks) FROM students
+);

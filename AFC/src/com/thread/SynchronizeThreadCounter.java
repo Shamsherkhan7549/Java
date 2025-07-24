@@ -11,7 +11,7 @@ public class SynchronizeThreadCounter {
 	    public static void main(String[] args) {
 	        // Thread 1
 	        Thread t1 = new Thread(()->{
-	        	for(int i=0;i<1000;i++)
+	        	for(int i=0;i<100000;i++)
 	        	{
 	        		increment();
 	        	}
@@ -19,7 +19,7 @@ public class SynchronizeThreadCounter {
 
 	        // Thread 2
 	        Thread t2 = new Thread(() -> {
-	            for (int i = 0; i < 1000; i++) {
+	            for (int i = 0; i < 100000; i++) {
 	                increment();
 	            }
 	        });

@@ -4,6 +4,11 @@ CREATE DATABASE db0717;
 -- to use databasae
 USE DB0717;
 
+show tables;
+select * from users;
+
+DROP TABLE users;
+
 -- use to create table in database
 CREATE TABLE student
 (
